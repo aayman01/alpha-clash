@@ -20,17 +20,17 @@
 
       <!-- home screen -->
 
-      <section class="home min-h-screen text-white flex flex-col items-center justify-center hidden">
+      <section id="home-section" class="min-h-screen text-white flex flex-col items-center justify-center">
         <div class="flex flex-col items-center space-y-7">
           <h1 class="text-8xl font-normal font-anton">ALPHABET CLASH</h1>
           <p class="font-poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button class="font-poppins btn bg-white text-black">Play Now</button>
+          <button onclick="play()" class="font-poppins btn bg-white text-black">Play Now</button>
         </div>
       </section>
 
       <!-- play ground start -->
 
-      <section class="play-ground hidden">
+      <section id="playground-section" class="play-ground hidden">
         <div class="flex flex-col justify-center items-center gap-20 pt-20">
             <!--screen -->
         <div class="artboard artboard-horizontal phone-6 border-[15px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB2] font-poppins ">
@@ -112,5 +112,7 @@
         </div>
       </section>
     </main>
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/alpha-clash.js"></script>
   </body>
 </html>
